@@ -1,0 +1,19 @@
+//To print the given number is prime or not
+#include<stdio.h>
+int main()
+{
+	int n,i=1,cnt=0;
+	printf("Enter any integer:");
+	scanf("%d",&n);
+	while(i<=n/2)
+	{
+		if(n%i==0)
+		cnt++;
+		i++;
+	}
+	if(cnt==1)
+	printf("PRIME");
+	else
+	printf("NOT PRIME");
+	return 0;
+}
