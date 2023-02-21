@@ -1,0 +1,21 @@
+//To print the lowest amoung n numbers
+#include<stdio.h>
+int main()
+{
+	int n,l,i,ele;
+	printf("Enter the value of n:");
+	scanf("%d",&n);
+	i=1;
+	while(i<=n)
+	{
+		scanf("%d",&ele);
+		if(i==1)l=ele;
+		if(ele<l)
+		{
+			l=ele;
+		}
+		i++;
+	}
+	printf("Lowest number=%d",l);
+	return 0;
+}
